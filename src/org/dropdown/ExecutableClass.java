@@ -15,7 +15,9 @@ public class ExecutableClass extends SampleDdBase {
 		selectValue(a, "EU");
 		Thread.sleep(5000);
 		selectVisible(a, "Africa");
-		
+		System.out.println("Selva is angry");
+		System.out.println("because of JI(Karthikeyan)");
+		System.out.println("We are best friends");
 	}
 
 }
