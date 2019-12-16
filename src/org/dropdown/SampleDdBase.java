@@ -39,6 +39,13 @@ public class SampleDdBase {
 		
 	}
 	
+
+	public static void Browser(String url) {
+		System.setProperty("webdriver.chrome.driver","C:\\Geetha\\SampleDropDown\\Driver1\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get(url);
+		driver.manage().window().maximize();
+
 	public static void selectValue(WebElement v,String text2) {
 		//s=new Select(v);
 		List<WebElement> op = s.getOptions();
@@ -53,5 +60,8 @@ public class SampleDdBase {
 		public static void selectVisible(WebElement vi,String text1) {
 		s=new Select(vi);
 		//s.selectByVisibleText(text1);
+
 	}
+	
+	
 }
