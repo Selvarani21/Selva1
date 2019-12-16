@@ -50,7 +50,7 @@ public class SampleDdBase {
 			}	
 	}
 		public static void selectVisible(WebElement vi,String text1) {
-		//s=new Select(vi);
-		s.selectByVisibleText(text1);
+		s=new Select(vi);
+		//s.selectByVisibleText(text1);
 	}
 }
