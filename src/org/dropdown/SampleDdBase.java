@@ -28,13 +28,14 @@ public class SampleDdBase {
 	
 	public static void scroll(WebElement down) {
 		j=(JavascriptExecutor)driver;
-		j.executeScript("arguments[0].scrollIntoView(true)",down );
+		j.executeScript("arguments[0].scrollIntoView(false)",down );
 		
 	}
 	
 	public static void selectIndex(WebElement m ,int index) {
 		s=new Select(m);
-		s.selectByIndex(index);
+		//s.selectByIndex(index);
+		s.selectByValue("7");
 		
 	}
 	
